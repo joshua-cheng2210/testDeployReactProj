@@ -3,9 +3,12 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  base: './',
+  server: {
+    open: true,
+    port: 8080
+  },
   build: {
-    base: './',
     outDir: 'dist',
     rollupOptions: {
       input: {
@@ -18,5 +21,6 @@ export default defineConfig({
       }
     },
     chunkSizeWarningLimit: 1000
-  }
+  },
+  plugins: [react()]
 });
