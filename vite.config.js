@@ -2,9 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
+  base: '/testDeployReactProj/',
+  plugins: [react()],
   build: {
-    base: '/testDeployReactProj', // Ensure the base path is set correctly for GitHub Pages
-    plugins: [react()],
     outDir: 'dist',
     rollupOptions: {
       input: {
