@@ -25,11 +25,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./client
 
       - name: Build React project
         run: npm run build
-        working-directory: ./client
 
       - name: Deploy React to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
