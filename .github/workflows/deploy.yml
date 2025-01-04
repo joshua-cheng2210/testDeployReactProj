@@ -1,0 +1,43 @@
+name: Deploy React + SME App
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if it's not 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React project
+        run: npm run build
+
+      - name: Deploy React to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+
+      - name: Set up server environment
+        run: |
+          # Add commands to set up your server environment
+          # For example, install server dependencies
+          npm install --prefix server
+
+      - name: Deploy server
+        run: |
+          # Add commands to deploy your server
+          # For example, start the server or deploy to a hosting service
+          npm run start --prefix server
