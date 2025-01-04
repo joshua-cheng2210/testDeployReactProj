@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
   build: {
-    base: './testDeployReactProj', // Ensure the base path is set correctly for GitHub Pages
+    base: '/testDeployReactProj', // Ensure the base path is set correctly for GitHub Pages
+    plugins: [react()],
     outDir: 'dist',
     rollupOptions: {
       input: {
@@ -15,7 +16,7 @@ export default defineConfig({
         assetFileNames: 'assets/[name].[ext]' // Set a predictable name for asset files
       }
     },
-    chunkSizeWarningLimit: 1000, // Adjust the chunk size warning limit if needed
-    plugins: [react()]
+    chunkSizeWarningLimit: 1000 // Adjust the chunk size warning limit if needed
+    
   }
 });
