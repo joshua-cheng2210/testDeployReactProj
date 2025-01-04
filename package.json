@@ -1,6 +1,6 @@
 {
   "name": "testdeployreactproj",
-  "homepage": "https://https://joshua-cheng2210.github.io/testDeployReactProj/",
+  "homepage": "https://joshua-cheng2210.github.io/testDeployReactProj/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
