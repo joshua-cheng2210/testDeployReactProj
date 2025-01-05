@@ -16,7 +16,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a> */}
       </div>
-      <h1>my Vite + React proj - testDeployReactProj from src -testing update: 2-</h1>
+      <h1>my Vite + React proj - testDeployReactProj from src -testing update: 3-</h1>
       <h1>now im trying to use git hub action to automate the step of deploying my project on git push command</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
