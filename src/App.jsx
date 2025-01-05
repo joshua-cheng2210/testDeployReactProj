@@ -17,7 +17,7 @@ function App() {
         </a>
       </div>
       <h1>my Vite + React proj - testDeployReactProj from src</h1>
-      <h1>now im trying to use git hub action to automate the step of deploying my project</h1>
+      <h1>now im trying to use git hub action to automate the step of deploying my project on git push command</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
