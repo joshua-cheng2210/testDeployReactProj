@@ -79,7 +79,7 @@ things to have in these files
 
 ## Known Issues
 - idk how to use git hub action to run host this react project. i changed my settings to git hub action and had a .yml file but its not working (i am suspecting that there is something wrong with one of the configurations file)
-- I'm starting to think that git hub doesn't allow you to constantly spam deploy... i had a line "testing update:10" i changed the number from 8, to 9, to 10. and ran the "npm run deploy" command on each update. the website only changes to 8 and it didn't change to 9 or 10
+- I'm starting to think that git hub doesn't allow you to constantly spam deploy... i had a line "testing update:10" i changed the number from 8, to 9, to 10. and ran the "npm run deploy" command on each update. the website only changes to 8 and it didn't change to 9 or 10. (although the gh-pages's index.js file did changed accordingly each time)
 
 ## go Fund me Coffee
 
