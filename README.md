@@ -73,11 +73,12 @@ things to have in these files
 
 ## how to tweak this project for your own uses (for collaborative developers)
 - additional features can be added to the game
-- idk how to use git hub action to run host this react project. i changed my settings to git hub action and had a .yml file but its not working (i am suspecting that there is something wrong with one of the configurations file)
+
 
 ## Find a bug?
 
 ## Known Issues
+- idk how to use git hub action to run host this react project. i changed my settings to git hub action and had a .yml file but its not working (i am suspecting that there is something wrong with one of the configurations file)
 
 ## go Fund me Coffee
 
